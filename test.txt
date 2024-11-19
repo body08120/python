@@ -433,7 +433,7 @@
         </div>
         <div class="g-recaptcha w-6/12" data-sitekey="6Leb1N8pAAAAAEjZh4mQHif2c3kp7B1h7zqeyp-B"></div>
         <div id="errCaptcha" class="text-red-500"></div>
-        <input type="hidden" name="csrf_token" value="09da17ecad62fef7269155d960980c0c53c8f549eedae59fa9ee510c45ee2793">        <input type="submit" value="Envoyer votre message" aria-label="submit" id="submit" name="submit"
+        <input type="hidden" name="csrf_token" value="1f80a3c2fa9bbaae3ab5a2eab7be82976a77dfe11938bf073808752580f86a92">        <input type="submit" value="Envoyer votre message" aria-label="submit" id="submit" name="submit"
           class="mt-8 w-full bg-pink-600 rounded-lg py-3 text-white font-semibold hover:bg-white hover:text-pink-600 hover:cursor-pointer duration-700 2xl:py-4" />
         <!-- Loader -->
         <div id="loader" class="hidden mt-8 w-full text-center">

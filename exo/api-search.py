@@ -1,6 +1,6 @@
 import requests  # Importation du module requests pour effectuer des requêtes HTTP.
-
-url = 'https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630'
+import json
+# url = 'https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630'
 # Définition de l'URL de l'image à télécharger.
 # On place l'URL dans une variable pour simplifier la maintenance du code
 
@@ -28,19 +28,28 @@ url = 'https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d86
 #     print(f"Erreur lors du téléchargement : {e}")  
 #     # Affiche un message d'erreur détaillé pour aider au débogage.
 
-url = "https://www.nataelwebdesigner.fr/index.php"
+url = "https://my-json-server.typicode.com/typicode/demo/db"
 
 try:
-    response = requests.get(url, timeout=10)
-    
+    response = requests.get(url)
     response.raise_for_status()
+    json_response = response.json()
     
-    with open ('test.txt', 'wb') as f:
+    print(json_response)
+    
+    # Serializing json
+    json_object = json.dumps(json_response, indent=4)
+ 
+# Writing to sample.json
+    with open("sample.json", "w") as outfile:
+        outfile.write(json_object)
+    
+    # with open ('json-exo.txt', 'w') as f:
         
-        f.write(response.content)
-        
-    print("Écriture du fichier est passer")
+    #     f.write(json_response)
+        print("Écriture du fichier est passer")
     
 except requests.exceptions.RequestException as o:
     
-    print('erreur lors du lancement du script')
+    print(f'erreur lors du lancement du script : {o}')
+

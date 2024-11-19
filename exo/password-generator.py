@@ -30,6 +30,7 @@ def generate_password(lenght=16, use_uppercase=True, use_digits=True, use_symbol
     if (not use_uppercase or any(c.isupper() for c in password)) and \
         (not use_digits or any(c.isdigit() for c in password)) and \
         (not use_symbols or any(c in string.punctuation for c in password)):
+            print('abc')
             password = generate_password(16, use_uppercase=True, use_digits=True, use_symbols=True)
             
     return password 
