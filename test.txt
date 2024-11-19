@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Natael Web Designer : Votre partenaire pour des sites web sur mesure, une conception UI/UX exceptionnelle et un référencement efficace.">
+  <meta name="keywords"
+    content="création de site web, site web vitrine, site web e-commerce, site web applicatif, conception UI, conception UX, designer UI/UX, référencement, web designer, services web, solutions digitales, conception de site, design web, développement web, optimisation SEO, expérience utilisateur, interface utilisateur">
+  <meta name="author" content="RENOLLET Nataël">
+  <meta name="robots" content="index, follow">
+  <title>Natael Web Designer - Création de Site Web, Conception UI/UX et Référencement</title>
+
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link href="src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="src/config/token.php">
+  <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+  <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+  <script src="https://kit.fontawesome.com/cb920235c9.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body id="home" class="font-nunito font-light text-black">
+
+  <!-- navbar menu desktop -->
+  <nav class="bg-black relative z-[1010] px-8 py-8 flex items-center justify-between lg:py-16 lg:px-24">
+    <!-- social -->
+    <div
+      class="animate__animated animate__fadeInLeft animate__slow max-md:hidden flex flex-col space-y-2 2xl:space-y-4">
+      <div class="text-white xl:flex space-x-2 items-center 2xl:space-x-4 max-xl:text-sm 2xl:text-lg">
+        <svg width="25" height="25">
+          <image xlink:href="assets/img/icons/linkedin.svg" width="25" height="25" />
+        </svg>
+
+        <span><a class="hover:text-pink-500 duration-500 max-xl:hidden" target="_blank"
+            href="https://fr.linkedin.com/in/nata%C3%ABl-renollet">Nataël Renollet</a></span>
+      </div>
+      <div class="text-white lg:flex space-x-2 items-center 2xl:space-x-4 max-xl:text-sm 2xl:text-lg">
+        <svg width="25" height="21">
+          <image xlink:href="assets/img/icons/email.svg" width="25" height="21" />
+        </svg>
+
+        <span><a class="hover:text-pink-500 duration-500 max-xl:hidden"
+            href="mailto:help@nataelwebdesigner.fr">help@nataelwebdesigner.fr</a></span>
+      </div>
+    </div>
+    <!-- citation -->
+    <div class="w-8/12 lg:w-6/12">
+      <span class="text-amber-200 font-oswald text-2xl font-extralight xl:text-3xl 2xl:text-5xl"><a
+          href="/index.php"><img src="assets/logo.png" alt="Logo RENOLLET Nataël" class="mx-auto" /></a></span>
+    </div>
+    <!-- navigations links -->
+    <div class="hidden md:flex space-x-4 xl:space-x-8 2xl:space-x-16">
+      <a href="#home" class="text-white hover:text-pink-500 duration-500 2xl:text-lg">Accueil</a>
+      <a href="#projects" class="text-white hover:text-pink-500 duration-500 2xl:text-lg">Projets</a>
+      <a href="#services" class="text-white hover:text-pink-500 duration-500 2xl:text-lg">Services</a>
+      <a href="#contact" class="text-white hover:text-pink-500 duration-500 2xl:text-lg">Contact</a>
+    </div>
+
+    <!-- toogle burger for mobile -->
+    <button id="menu-button" class="md:hidden block w-5 relative transform -translate-x-1/2 -translate-y-1/2"
+      aria-label="Menu Button">
+      <span
+        class="block absolute h-0.5 w-5 bg-gray-200 transform transition duration-500 ease-in-out -translate-y-1.5"></span>
+      <span class="block absolute h-0.5 w-5 bg-gray-200 transform transition duration-500 ease-in-out"></span>
+      <span
+        class="block absolute h-0.5 w-5 bg-gray-200 transform transition duration-500 ease-in-out translate-y-1.5"></span>
+    </button>
+  </nav>
+  <!-- mobile navigation menu -->
+  <div
+    class="animate__animated hidden fixed w-full h-screen text-white  transform transition duration-500 ease-in-out bg-black/75"
+    id="mobile-menu">
+    <!-- content -->
+    <div class="h-full py-24 text-black bg-amber-100 flex flex-col justify-center space-y-32">
+      <!-- navigations links -->
+      <div id="navigation-mobile-cont" class="w-full flex flex-col items-center space-y-16">
+        <a href="#home">
+          <div class="flex space-x-8">
+            <svg width="25" height="25">
+              <image xlink:href="assets/img/icons/arrow-right-short.svg" width="25" height="25" />
+            </svg>
+            <span>Accueil</span>
+          </div>
+        </a>
+        <a href="#projects">
+          <div class="flex space-x-8">
+            <svg width="25" height="25">
+              <image xlink:href="assets/img/icons/arrow-right-short.svg" width="25" height="25" />
+            </svg>
+            <span>Projets</span>
+          </div>
+        </a>
+        <a href="#services">
+          <div class="flex space-x-8">
+            <svg width="25" height="25">
+              <image xlink:href="assets/img/icons/arrow-right-short.svg" width="25" height="25" />
+            </svg>
+            <span>Services</span>
+          </div>
+        </a>
+        <a href="#contact">
+          <div class="flex space-x-8">
+            <svg width="25" height="25">
+              <image xlink:href="assets/img/icons/arrow-right-short.svg" width="25" height="25" />
+            </svg>
+            <span>Contact</span>
+          </div>
+        </a>
+      </div>
+      <!-- socials links -->
+      <div class="w-full flex justify-center items-center space-x-16">
+        <a target="_blank" href="https://fr.linkedin.com/in/nata%C3%ABl-renollet"><img
+            src="assets/img/icons/linkedin.svg" alt="icône LinkedIn" /></a>
+        <a href="mailto:help@nataelwebdesigner.fr"><img src="assets/img/icons/mail-black.svg" alt="icône Email" /></a>
+      </div>
+    </div>
+  </div>
+  <!---->
+  <!-- header section -->
+  <header
+    class="bg-amber-200 px-8 pt-16 flex flex-col sm:flex-row sm:justify-between lg:pt-16 lg:px-24 xl:pt-40 overflow-hidden">
+    <div class="pb-16 sm:w-5/12 xl:pb-36 2xl:w-6/12">
+      <h1 class="font-oswald font-extralight sm:text-nowrap text-3xl 2xl:text-6xl">
+        <span class="text-xl 2xl:text-3xl">Bonjour,</span><br />
+        <span class="text-2xl 2xl:text-5xl">
+          je suis</span>
+        Concepteur UI UX
+      </h1>
+      <p class="py-6 xl:py-8 xl:text-lg 2xl:py-12">
+        En tant que Développeur Web, je m’efforce de fusionner la puissance du
+        développement associé à l’UI UX pour concevoir des interfaces robustes
+        et intuitives.
+      </p>
+      <a href="index.php#contact">
+        <button aria-label="Contact Button"
+          class="animate__animated animate__pulse animate__slow animate__infinite bg-pink-600 rounded-lg px-6 py-3 max-xs:w-full w-6/12  text-white font-semibold hover:bg-white hover:text-pink-600 duration-700">
+          Contactez-moi
+        </button>
+      </a>
+    </div>
+    <div class="animate__animated animate__bounceInUp animate__slow w-10/12 max-sm:mx-auto flex items-end sm:w-5/12">
+      <img src="assets/img/illustrations/header-illustration.webp" alt="Illustration header" />
+    </div>
+  </header>
+  <!---->
+  <!-- projet section -->
+  <section id="projects" class="px-8 pt-16 lg:px-24 lg:py-24">
+    <div class="lg:flex justify-between">
+      <!-- illustration desktop -->
+      <div id="container-illustration-desktop-projet" class="max-lg:hidden opacity-0 2xl:w-max">
+        <img src="assets/img/illustrations/service-illustration-desktop.webp" alt="Illustration pour écran ordinateur"
+          class="w-10/12 2xl:w-full" />
+      </div>
+      <!-- content -->
+      <div class="xl:w-10/12 2xl:flex 2xl:flex-col">
+        <!-- title -->
+        <div class="flex justify-between items-start relative">
+          <h2 class="font-oswald font-extralight leading-relaxed text-3xl max-sm:w-7/12 2xl:text-5xl 2xl:px-24">
+            Création Web et Design UI UX !
+          </h2>
+          <img src="assets/img/illustrations/services-illustration.webp" alt="Illustration ui-ux"
+            class="w-4/12 absolute right-0 top-0 sm:w-2/12 lg:top-16 2xl:w-1.5/12 2xl:top-24" />
+        </div>
+        <!-- text -->
+        <div id="illustration-desktop-projet-pointView">
+          <p class="py-8 xs:w-8/12 xl:text-lg xl:w-10/12 2xl:px-24 2xl:py-12">
+            Passionné par la création web, chaque défi est une chance de
+            grandir et d’acquérir de nouvelles compétences. En tant que
+            Concepteur UI/UX, je transforme chaque projet en une aventure
+            unique pour créer des expériences utilisateur intuitives. La
+            conception et l’innovation sont les piliers qui guident mes pas
+            dans ce domaine passionnant et en constante évolution.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- cards carroussel -->
+  <section id="splideProjets" class="splide" aria-labelledby="carousel-heading">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <!-- card -->
+        <li class="px-8 py-8 flex flex-col items-center justify-center splide__slide drop-shadow-xl">
+          <!-- Définition du clip-path -->
+          <svg width="0" height="0" viewBox="0 0 416 508" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <clipPath id="clip-path-1" clipPathUnits="objectBoundingBox"
+                transform="scale(0.00240384615, 0.00196850394)">
+                <path
+                  d="M0 37C0 16.5655 16.5655 0 37 0H379C399.435 0 416 16.5655 416 37V338.5C416 358.935 399.435 375.5 379 375.5H356.049C317.534 375.5 286.476 407.031 287.057 445.541L287.433 470.442C287.745 491.092 271.09 508 250.437 508H37C16.5655 508 0 491.435 0 471V37Z" />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <!-- Conteneur -->
+          <div class="relative pb-8 flex flex-col items-center">
+            <!-- Conteneur du titre avec fond -->
+            <h3 class="bg-[#DCEBAB] rounded-t-3xl text-center font-oswald font-extralight text-2xl w-8/12 py-4">
+              Applicatif
+            </h3>
+            <a id="btnOpenModalJmsSeul" class="absolute right-2 bottom-10" href="#containerModalJmsSeul"
+              aria-label="Ouvrir une pop-up présentant le projet">
+              <svg
+                class="bg-pink-500 px-3 py-3 rounded-full w-14 h-14 xss:w-16 xss:h-16 fill-current text-white hover:text-pink-600 hover:stroke-pink-600 hover:bg-white duration-700"
+                viewBox="0 0 44 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.041 30.4584L30.9577 12.5417" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M13.041 12.5417H30.9577V30.4584" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <!-- Div pour le contenu du clip-path -->
+            <div class="clipped-div-1 w-64 h-72 mt-[-5px] xss:w-[20rem] xss:h-[22rem] xs:w-[22rem] xs:h-[24rem]"></div>
+          </div>
+        </li>
+        <!---->
+        <!-- card -->
+        <li class="px-8 py-8 flex flex-col items-center justify-center splide__slide drop-shadow-xl">
+          <!-- Définition du clip-path -->
+          <svg width="0" height="0" viewBox="0 0 416 508" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <clipPath id="clip-path-2" clipPathUnits="objectBoundingBox"
+                transform="scale(0.00240384615, 0.00196850394)">
+                <path
+                  d="M0 37C0 16.5655 16.5655 0 37 0H379C399.435 0 416 16.5655 416 37V338.5C416 358.935 399.435 375.5 379 375.5H356.049C317.534 375.5 286.476 407.031 287.057 445.541L287.433 470.442C287.745 491.092 271.09 508 250.437 508H37C16.5655 508 0 491.435 0 471V37Z" />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <!-- Conteneur -->
+          <div class="relative pb-8 flex flex-col items-center">
+            <!-- Conteneur du titre avec fond -->
+            <!-- <div class="">
+              </div> -->
+            <h3 class="bg-[#DCEBAB] rounded-t-3xl text-center font-oswald font-extralight text-2xl w-8/12 py-4">
+              CMS
+            </h3>
+            <a id="btnOpenModalArmoises" class="absolute right-2 bottom-10" href="#containerModalArmoises" aria-label="Ouvrir une pop-up présentant le projet">
+              <svg
+                class="bg-pink-500 px-3 py-3 rounded-full w-14 h-14 xss:w-16 xss:h-16 fill-current text-white hover:text-pink-600 hover:stroke-pink-600 hover:bg-white duration-700"
+                viewBox="0 0 44 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.041 30.4584L30.9577 12.5417" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M13.041 12.5417H30.9577V30.4584" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <!-- Div pour le contenu du clip-path -->
+            <div class="clipped-div-2 w-64 h-72 mt-[-5px] xss:w-[20rem] xss:h-[22rem] xs:w-[22rem] xs:h-[24rem]"></div>
+          </div>
+        </li>
+        <!---->
+        <!-- card -->
+        <li class="px-8 py-8 flex flex-col items-center justify-center splide__slide drop-shadow-xl">
+          <!-- Définition du clip-path -->
+          <svg width="0" height="0" viewBox="0 0 416 508" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <clipPath id="clip-path-3" clipPathUnits="objectBoundingBox"
+                transform="scale(0.00240384615, 0.00196850394)">
+                <path
+                  d="M0 37C0 16.5655 16.5655 0 37 0H379C399.435 0 416 16.5655 416 37V338.5C416 358.935 399.435 375.5 379 375.5H356.049C317.534 375.5 286.476 407.031 287.057 445.541L287.433 470.442C287.745 491.092 271.09 508 250.437 508H37C16.5655 508 0 491.435 0 471V37Z" />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <!-- Conteneur -->
+          <div class="relative pb-8 flex flex-col items-center">
+            <!-- Conteneur du titre avec fond -->
+            <!-- <div class="">
+              </div> -->
+            <h3 class="bg-[#DCEBAB] rounded-t-3xl text-center font-oswald font-extralight text-2xl w-8/12 py-4">
+              Design UI UX
+            </h3>
+            <a class="absolute right-2 bottom-10" id="btnOpenModalDogSense" href="#containerModalDogSense" aria-label="Ouvrir une pop-up présentant le projet">
+              <svg
+                class="bg-pink-500 px-3 py-3 rounded-full w-14 h-14 xss:w-16 xss:h-16 fill-current text-white hover:text-pink-600 hover:stroke-pink-600 hover:bg-white duration-700"
+                viewBox="0 0 44 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.041 30.4584L30.9577 12.5417" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M13.041 12.5417H30.9577V30.4584" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <!-- Div pour le contenu du clip-path -->
+            <div class="clipped-div-3 w-64 h-72 mt-[-5px] xss:w-[20rem] xss:h-[22rem] xs:w-[22rem] xs:h-[24rem]"></div>
+          </div>
+        </li>
+        <!---->
+      </ul>
+    </div>
+  </section>
+  <!---->
+  <!-- services section -->
+  <section id="services" class="px-8 py-16 lg:px-24 lg:py-24">
+    <h2 class="font-oswald font-extralight text-center md:text-right leading-relaxed text-3xl 2xl:text-5xl">
+      Solutions Innovantes pour Votre Présence en Ligne
+    </h2>
+    <!---->
+
+    <!--cards services-->
+    <div id="container-illustration-services-cards"
+      class="py-16 mx-auto grid grid-cols-1 justify-center gap-16 md:grid-cols-4 md:grid-rows-3 lg:grid-cols-6 lg:grid-rows-2 xl:gap-32 1xl:max-w-screen-xl 1xl:py-32">
+      <div class="illustration-services-cards opacity-0  flex flex-col items-center gap-4 md:col-span-2 1xl:gap-8">
+        <img src="assets/img/illustrations/front-end.png" alt="Illustration front-end" width="94" height="90" />
+        <div>
+          <h3 class="text-center text-2xl font-oswald font-light xl:text-3xl">
+            Sites Vitrines
+          </h3>
+          <p class="py-2 text-center text-lg">
+            Sites vitrines attrayants et réactifs
+          </p>
+          <!-- <p class="max-lg:hidden text-center">Sites vitrines attrayants et réactifs en HTML5, CSS3, JavaScript, TailwindCSS et Bootstrap</p> -->
+        </div>
+      </div>
+      <div class="illustration-services-cards opacity-0  flex flex-col items-center gap-4 md:col-span-2 1xl:gap-8">
+        <img src="assets/img/illustrations/cms.png" alt="Illustration cms" width="94" height="90" />
+        <div>
+          <h3 class="text-center text-2xl font-oswald font-light xl:text-3xl">
+            CMS
+          </h3>
+          <p class="py-2 text-center text-lg">
+            Installation, configuration et création de site
+          </p>
+          <!-- <p class="max-lg:hidden text-center">Sites vitrines attrayants et réactifs en HTML5, CSS3, JavaScript, TailwindCSS et Bootstrap</p> -->
+        </div>
+      </div>
+      <div class="illustration-services-cards opacity-0  flex flex-col items-center gap-4 md:col-span-2 1xl:gap-8">
+        <img src="assets/img/illustrations/back-end.png" alt="Illustration back-end" width="94" height="90" />
+        <div>
+          <h3 class="text-center text-2xl font-oswald font-light xl:text-3xl">
+            Applicatifs
+          </h3>
+          <p class="py-2 text-center text-lg">Applications web dynamiques</p>
+          <!-- <p class="max-lg:hidden text-center">Sites vitrines attrayants et réactifs en HTML5, CSS3, JavaScript, TailwindCSS et Bootstrap</p> -->
+        </div>
+      </div>
+      <div
+        class="illustration-services-cards opacity-0  flex flex-col items-center gap-4 md:col-span-2 lg:col-start-2 1xl:gap-8">
+        <img src="assets/img/illustrations/design.png" alt="Illustration design" width="94" height="90" />
+        <div>
+          <h3 class="text-center text-xl font-oswald font-light xl:text-2xl">
+            Design UI UX
+          </h3>
+          <p class="py-2 text-center text-lg">
+            Conceptions esthétiques pour une navigation fluide
+          </p>
+          <!-- <p class="max-lg:hidden text-center">Sites vitrines attrayants et réactifs en HTML5, CSS3, JavaScript, TailwindCSS et Bootstrap</p> -->
+        </div>
+      </div>
+      <div
+        class="illustration-services-cards opacity-0  flex flex-col items-center gap-4 md:col-start-2 md:col-span-2 lg:col-start-auto 1xl:gap-8">
+        <img src="assets/img/illustrations/seo.png" alt="Illustration seo" width="94" height="90" />
+        <div>
+          <h3 class="text-center text-2xl font-oswald font-light xl:text-3xl">
+            SEO
+          </h3>
+          <p class="py-2 text-center text-lg">
+            Amélioration de la visibilité
+          </p>
+          <!-- <p class="max-lg:hidden text-center">Sites vitrines attrayants et réactifs en HTML5, CSS3, JavaScript, TailwindCSS et Bootstrap</p> -->
+        </div>
+      </div>
+    </div>
+    <!---->
+  </section>
+  <!---->
+  <!-- contact section -->
+  <section id="contact" class="lg:flex">
+    <div
+      class="lg:w-6/12 bg-[#373737] text-white py-16 px-8 flex flex-col max-lg:gap-y-8 lg:justify-between 2xl:px-24 2xl:py-24">
+      <!-- illustration -->
+      <div>
+        <img src="assets/img/illustrations/contact-illustration.png" alt="Illustration contact" />
+      </div>
+      <!-- texte-->
+      <div class="flex flex-col gap-y-8">
+        <h2 class="font-oswald font-extralight text-left leading-relaxed text-3xl 2xl:text-5xl">
+          Restons en contact !
+        </h2>
+        <p class="xl:text-lg">
+          Des questions sur une solution numérique ? <br />N’hésitez pas à me
+          contacter via ce formulaire, par email ou sur LinkedIn.<br />Je
+          m’engage à répondre rapidement à toutes vos demandes. <br />Au
+          plaisir d’échanger avec vous !
+        </p>
+      </div>
+      <!-- social -->
+      <div id="social-contact" class="opacity-0 flex flex-col space-y-2 2xl:space-y-4">
+        <div class="text-white flex space-x-2 items-center 2xl:space-x-4 max-xl:text-sm 2xl:text-lg">
+          <svg width="25" height="25">
+            <image xlink:href="assets/img/icons/linkedin.svg" width="25" height="25" />
+          </svg>
+
+          <span><a class="hover:text-pink-500 duration-500" target="_blank"
+              href="https://fr.linkedin.com/in/nata%C3%ABl-renollet">Nataël Renollet</a></span>
+        </div>
+        <div class="text-white flex space-x-2 items-center 2xl:space-x-4 max-xl:text-sm 2xl:text-lg">
+          <svg width="25" height="21">
+            <image xlink:href="assets/img/icons/email.svg" width="25" height="21" />
+          </svg>
+
+          <span><a class="hover:text-pink-500 duration-500"
+              href="mailto:help@nataelwebdesigner.fr">help@nataelwebdesigner.fr</a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:w-6/12 bg-amber-100 py-16 px-16 2xl:px-24 2xl:py-24">
+      <div>
+                <div id="form-errors" class=""></div>
+      </div>
+      <form action="#" method="POST" id="form-contact" class="flex flex-col gap-y-8">
+        <div class="flex flex-col gap-y-2">
+          <label for="email" class="text-lg">Email :</label>
+          <input type="email" aria-label="email" id="email" name="email" placeholder="Tapez votre adresse email . . ."
+            class="px-4 py-3 border border-transparent bg-white bg-opacity-75 placeholder:italic focus:border-amber-400 focus:ring-amber-400" />
+          <div id="errMail" class="text-red-500"></div>
+        </div>
+        <div class="flex flex-col gap-y-2">
+          <label for="object" class="text-lg">La raison de votre message :</label>
+          <input type="text" aria-label="object" id="object" name="object"
+            placeholder="Décrivez la raison de votre message . . ."
+            class="px-4 py-3 border border-transparent bg-white bg-opacity-75 placeholder:italic focus:border-amber-400 focus:ring-amber-400" />
+          <div id="errObjt" class="text-red-500"></div>
+        </div>
+        <div class="flex flex-col gap-y-2">
+          <label for="message" class="text-lg">Votre message :</label>
+          <textarea aria-label="message" id="message" name="message" placeholder="Tapez votre message ici . . ."
+            class="px-4 py-3 border border-transparent bg-white bg-opacity-75 placeholder:italic focus:border-amber-400 focus:ring-amber-400 h-44"></textarea>
+          <div id="errMessage" class="text-red-500"></div>
+        </div>
+        <div class="g-recaptcha w-6/12" data-sitekey="6Leb1N8pAAAAAEjZh4mQHif2c3kp7B1h7zqeyp-B"></div>
+        <div id="errCaptcha" class="text-red-500"></div>
+        <input type="hidden" name="csrf_token" value="09da17ecad62fef7269155d960980c0c53c8f549eedae59fa9ee510c45ee2793">        <input type="submit" value="Envoyer votre message" aria-label="submit" id="submit" name="submit"
+          class="mt-8 w-full bg-pink-600 rounded-lg py-3 text-white font-semibold hover:bg-white hover:text-pink-600 hover:cursor-pointer duration-700 2xl:py-4" />
+        <!-- Loader -->
+        <div id="loader" class="hidden mt-8 w-full text-center">
+          <svg class="animate-spin h-8 w-8 text-pink-600 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+          </svg>
+        </div>
+      </form>
+      <div id="form-result"></div>
+
+
+
+    </div>
+  </section>
+  <!---->
+  <!-- footer -->
+  <footer class="bg-black text-white py-8 px-8 max-lg:space-y-8 lg:space-y-16 lg:py-24  2xl:px-24">
+    <div class="space-y-4">
+            <h3 class="text-center font-oswald font-extralight leading-relaxed text-xl lg:text-2xl">
+        Départements Couvert par Mes Services
+      </h3>
+      <ul class="flex flex-wrap justify-center gap-8">
+                  <li><a class="hover:text-pink-500 duration-500 flex"
+              href="/Ardennes/">Ardennes</a></li>
+                  <li><a class="hover:text-pink-500 duration-500 flex"
+              href="/Aube/">Aube</a></li>
+                  <li><a class="hover:text-pink-500 duration-500 flex"
+              href="/Marne/">Marne</a></li>
+                  <li><a class="hover:text-pink-500 duration-500 flex"
+              href="/Haute-Marne/">Haute-Marne</a></li>
+                  <li><a class="hover:text-pink-500 duration-500 flex"
+              href="/Meurthe-et-Moselle/">Meurthe-et-Moselle</a></li>
+                  <li><a class="hover:text-pink-500 duration-500 flex"
+              href="/Meuse/">Meuse</a></li>
+                  <li><a class="hover:text-pink-500 duration-500 flex"
+              href="/Moselle/">Moselle</a></li>
+                  <li><a class="hover:text-pink-500 duration-500 flex"
+              href="/Bas-Rhin/">Bas-Rhin</a></li>
+                  <li><a class="hover:text-pink-500 duration-500 flex"
+              href="/Haut-Rhin/">Haut-Rhin</a></li>
+                  <li><a class="hover:text-pink-500 duration-500 flex"
+              href="/Vosges/">Vosges</a></li>
+              </ul>
+    </div>
+    <div class="lg:flex lg:justify-between">
+      <div class="space-y-4 lg:w-4/12">
+        <h3 class="font-oswald font-extralight leading-relaxed text-xl lg:text-2xl">
+          Concepteur UI UX - Développeur Web
+        </h3>
+        <p class="xl:text-lg">
+          Passionné par la création web, chaque défi est une opportunité de
+          croissance. Chaque projet est une exploration, de l’idée à sa
+          concrétisation. Je m’efforce de donner une identité unique à chaque
+          création.
+        </p>
+      </div>
+      <div class="max-sm:space-y-8 max-sm:mt-8 sm:flex sm:justify-between lg:w-6/12">
+        <div class="space-y-4 lg:w-4/12">
+          <h4 class="font-oswald text-lg lg:text-xl">Lien utiles :</h4>
+          <ul class="space-y-2">
+            <li class="space-x-8">
+              <a class="hover:text-pink-500 duration-500 flex" target="_blank" href="assets/downloads/cv.pdf">
+                <svg width="25" height="25">
+                  <image xlink:href="assets/img/icons/arrow-right-short.svg" width="25" height="25" />
+                </svg>
+                Mon CV&nbsp;<i class="fa-solid fa-square-arrow-up-right"></i></a>
+            </li>
+            <li class="space-x-8">
+              <a class="hover:text-pink-500 duration-500 flex" target="_blank"
+                href="https://www.linkedin.com/in/nata%C3%ABl-renollet/">
+                <svg width="25" height="25">
+                  <image xlink:href="assets/img/icons/arrow-right-short.svg" width="25" height="25" />
+                </svg>
+                LinkedIn&nbsp;<i class="fa-solid fa-square-arrow-up-right"></i>
+              </a>
+            </li>
+            <li class="space-x-8">
+              <a class="hover:text-pink-500 duration-500 flex" target="_blank" href="https://github.com/body08120">
+                <svg width="25" height="25">
+                  <image xlink:href="assets/img/icons/arrow-right-short.svg" width="25" height="25" />
+                </svg>
+                GitHub&nbsp;<i class="fa-solid fa-square-arrow-up-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-4 lg:w-4/12">
+          <h4 class="font-oswald text-lg lg:text-xl">Informations légales :</h4>
+          <ul class="space-y-2">
+            <li class="flex space-x-8">
+              <a id="btnOpenModalLegalMentions" class="hover:text-pink-500 duration-500 flex" href="#mentionslegales">
+                <svg width="25" height="25">
+                  <image xlink:href="assets/img/icons/arrow-right-short.svg" width="25" height="25" />
+                </svg>
+                Mentions légales
+              </a>
+            </li>
+            <li class="space-x-8">
+              <a id="btnOpenModalDataUser" class="hover:text-pink-500 duration-500 flex" href="#donneespersonnelles">
+                <svg width="25" height="25">
+                  <image xlink:href="assets/img/icons/arrow-right-short.svg" width="25" height="25" />
+                </svg>
+                Données personnelles
+              </a>
+            </li>
+            <li class="space-x-8">
+              <a id="btnOpenModalPolicy" class="hover:text-pink-500 duration-500 flex" href="#confidentialites">
+                <svg width="25" height="25">
+                  <image xlink:href="assets/img/icons/arrow-right-short.svg" width="25" height="25" />
+                </svg>
+                Politique de confidentialité
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="bg-[#AACA51] px-8 py-4">
+    <p class="text-center">
+      Ce site a été créé avec passion par mes soins. <br />
+      Tous droits réservés © 2024
+    </p>
+  </div>
+  <!---->
+
+  <!-- modal projet jamais seul -->
+<section id="containerModalJmsSeul"
+    class="modal hidden fixed z-[999] inset-0 bg-amber-100 overflow-y-auto max-h-[90vh] mx-8 my-8 px-8 py-8 rounded-3xl flex-col gap-8 xl:gap-16 animate__animated animate__fadeOut">
+    <div class="relative flex">
+        <div class="pt-8 space-y-4">
+            <h2 class="font-oswald font-extralight leading-relaxed text-3xl 2xl:text-5xl">
+                JamaisSeul - Plateforme d'Accompagnement Social
+            </h2>
+            <p class="xl:text-lg py-8 2xl:py-12">
+                Découvrez JamaisSeul, une plateforme dédiée à l'accompagnement des personnes en situation d'isolement
+                social. J’ai créé un site interactif pour présenter les missions, services et faciliter le contact avec
+                l’équipe, offrant un accès rapide aux ressources essentielles.
+            </p>
+        </div>
+        <button id="btnCloseModalJmsSeul" class="absolute top-5 right-5 hover:cursor-pointer">
+            <span
+                class="block absolute h-0.5 w-5 bg-black transform transition duration-500 ease-in-out rotate-45"></span>
+            <span
+                class="block absolute h-0.5 w-5 bg-black transform transition duration-500 ease-in-out -rotate-45"></span>
+        </button>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-4 xl:gap-8">
+        <div class="bg-[#C3DC7A] px-4 py-3 rounded-3xl">
+            <span>HTML5</span>
+        </div>
+        <div class="bg-[#C3DC7A] px-4 py-3 rounded-3xl">
+            <span>CSS3</span>
+        </div>
+        <div class="bg-[#C3DC7A] px-4 py-3 rounded-3xl">
+            <span>JAVASCRIPT</span>
+        </div>
+        <div class="bg-[#C3DC7A] px-4 py-3 rounded-3xl">
+            <span>BOOSTRAP5</span>
+        </div>
+        <div class="bg-[#C3DC7A] px-4 py-3 rounded-3xl">
+            <span>PHP</span>
+        </div>
+        <div class="bg-[#C3DC7A] px-4 py-3 rounded-3xl">
+            <span>MYSQL</span>
+        </div>
+    </div>
+
+    <!-- cards carroussel -->
+    <div id="splideJmsSeul" class="splide" aria-labelledby="carousel-heading">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <!-- card -->
+                <li class="px-8 py-4 flex flex-col items-center justify-center splide__slide drop-shadow-xl">
+                    <img src="assets/img/illustrations/jmsseul.png"
+                        alt="Illustration du site web dans une mockup mobile" />
+                    <p class="text-[#858585] py-4 xl:text-lg mx-auto text-center">Page d'accueil</p>
+                </li>
+                <!---->
+                <!-- card -->
+                <li class="px-8 py-4 flex flex-col items-center justify-center splide__slide drop-shadow-xl">
+                    <img src="assets/img/illustrations/jmsseul0.png"
+                        alt="Illustration du site web dans une mockup mobile" />
+                    <p class="text-[#858585] py-4 xl:text-lg mx-auto text-center">Espace de connexion</p>
+                </li>
+                <!---->
+                <!-- card -->
+                <li class="px-8 py-4 flex flex-col items-center justify-center splide__slide drop-shadow-xl">
+                    <img src="assets/img/illustrations/jmsseul1.png"
+                        alt="Illustration du site web dans une mockup mobile" />
+                    <p class="text-[#858585] py-4 xl:text-lg mx-auto text-center">Ajout d'un article (administration)
+                    </p>
+                </li>
+                <!---->
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <ul class="space-y-4 xl:space-y-8">
+            <li class="flex items-center">
+                <svg class="min-w-8" width="25" height="25">
+                    <image xlink:href="assets/img/icons/check.svg" width="25" height="25" />
+                </svg>
+                <div><span class="font-semibold">Navigation Fluide avec AJAX : </span> <span>Une expérience utilisateur
+                        améliorée grâce à une navigation fluide.</span></div>
+            </li>
+            <li class="flex items-center">
+                <svg class="min-w-8" width="25" height="25">
+                    <image xlink:href="assets/img/icons/check.svg" width="25" height="25" />
+                </svg>
+                <div><span class="font-semibold">Structure Modulaire avec MVC : </span> <span>Organisation efficace du
+                        code pour une maintenance simplifiée.</span></div>
+            </li>
+            <li class="flex items-center">
+                <svg class="min-w-8" width="25" height="25">
+                    <image xlink:href="assets/img/icons/check.svg" width="25" height="25" />
+                </svg>
+                <div><span class="font-semibold">Cohérence Visuelle avec Bootstrap : </span> <span>Un développement
+                        accéléré et une apparence uniforme.</span></div>
+            </li>
+            <li class="flex items-center">
+                <svg class="min-w-8" width="25" height="25">
+                    <image xlink:href="assets/img/icons/check.svg" width="25" height="25" />
+                </svg>
+                <div><span class="font-semibold">Gestion Efficace des Données : </span> <span>Stockage et gestion
+                        optimisés des informations.</span></div>
+            </li>
+            <li class="flex items-center">
+                <svg class="min-w-8" width="25" height="25">
+                    <image xlink:href="assets/img/icons/check.svg" width="25" height="25" />
+                </svg>
+                <div><span class="font-semibold">Performance Optimisée : </span> <span>Un site web rapide et réactif
+                        pour une meilleure expérience utilisateur.</span></div>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <a href="#contact">
+            <button aria-label="Contact Button" id="btnContactJmsSeul"
+                class="animate__animated animate__pulse animate__slow animate__infinite bg-pink-600 rounded-lg px-6 py-3 text-white font-semibold hover:bg-white hover:text-pink-600 duration-700">
+                Contactez-moi
+            </button>
+        </a>
+    </div>
+    <button id="backToTopBtn">Retour en haut</button>
+</section>
+<!---->
+
+<!-- modal projet armoises -->
+<section id="containerModalArmoises"
+    class="modal hidden fixed z-[999] inset-0 bg-amber-100 overflow-y-auto max-h-[90vh] mx-8 my-8 px-8 py-8 rounded-3xl flex-col gap-8 xl:gap-16 animate__animated animate__fadeOut">
+    <div class="relative flex">
+        <div class="pt-8 space-y-4">
+            <h2 class="font-oswald font-extralight leading-relaxed text-3xl 2xl:text-5xl">
+                4x4 Armoises - Site Web pour l'Endurance Tondeuse
+            </h2>
+            <p class="xl:text-lg py-8 2xl:py-12">
+                Découvrez le projet 4x4 Armoises Endurance Tondeuse, une plateforme dédiée à promouvoir l'événement.
+                J’ai créé une interface interactive pour présenter l'événement en respectant le cahier des charges du
+                client, en mettant l'accent sur l'expérience utilisateur et en facilitant le contact avec l’équipe. Le
+                site propose une interface conviviale avec des galeries photos et des informations détaillées sur le
+                déroulement.
+            </p>
+        </div>
+        <button id="btnCloseModalArmoises" class="absolute top-5 right-5 hover:cursor-pointer">
+            <span
+                class="block absolute h-0.5 w-5 bg-black transform transition duration-500 ease-in-out rotate-45"></span>
+            <span
+                class="block absolute h-0.5 w-5 bg-black transform transition duration-500 ease-in-out -rotate-45"></span>
+        </button>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-4 xl:gap-8">
+        <div class="bg-[#C3DC7A] px-4 py-3 rounded-3xl">
+            <span>WORDPRESS</span>
+        </div>
+        <div class="bg-[#C3DC7A] px-4 py-3 rounded-3xl">
+            <span>ELEMENTOR PRO</span>
+        </div>
+        <div class="bg-[#C3DC7A] px-4 py-3 rounded-3xl">
+            <span>YOAST SEO</span>
+        </div>
+        <div class="bg-[#C3DC7A] px-4 py-3 rounded-3xl">
+            <span>MEETFORM</span>
+        </div>
+    </div>
+
+    <!-- cards carroussel -->
+    <!-- <div id="splideArmoises" class="splide" aria-labelledby="carousel-heading">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="px-8 py-4 flex flex-col items-center justify-center splide__slide drop-shadow-xl">
+                    <img src="assets/img/illustrations/jmsseul.png"
+                        alt="Illustration du site web dans une mockup mobile" />
+                    <p class="text-[#858585] py-4 xl:text-lg mx-auto text-center">Page d'accueil</p>
+                </li>
+                <li class="px-8 py-4 flex flex-col items-center justify-center splide__slide drop-shadow-xl">
+                    <img src="assets/img/illustrations/jmsseul0.png"
+                        alt="Illustration du site web dans une mockup mobile" />
+                    <p class="text-[#858585] py-4 xl:text-lg mx-auto text-center">Galerie photo</p>
+                </li>
+                <li class="px-8 py-4 flex flex-col items-center justify-center splide__slide drop-shadow-xl">
+                    <img src="assets/img/illustrations/jmsseul1.png"
+                        alt="Illustration du site web dans une mockup mobile" />
+                    <p class="text-[#858585] py-4 xl:text-lg mx-auto text-center">Formulaire de satisfaction
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div> -->
+
+    <div>
+        <ul class="space-y-4 xl:space-y-8">
+            <li class="flex items-center">
+                <svg class="min-w-8" width="25" height="25">
+                    <image xlink:href="assets/img/icons/check.svg" width="25" height="25" />
+                </svg>
+                <div><span class="font-semibold">Gestion de Contenu Simplifiée : </span> <span>Déploiement d'une
+                        infrastructure WordPress optimisée.</span></div>
+            </li>
+            <li class="flex items-center">
+                <svg class="min-w-8" width="25" height="25">
+                    <image xlink:href="assets/img/icons/check.svg" width="25" height="25" />
+                </svg>
+                <div><span class="font-semibold">Conception Cohérente : </span> <span>Utilisation d'Elementor Pro pour
+                        une interface professionnelle sans
+                        multiples plugins.</span></div>
+            </li>
+            <li class="flex items-center">
+                <svg class="min-w-8" width="25" height="25">
+                    <image xlink:href="assets/img/icons/check.svg" width="25" height="25" />
+                </svg>
+                <div><span class="font-semibold">Organisation Efficace : </span> <span>Gestion agile du projet avec
+                        Notion.</span></div>
+            </li>
+            <li class="flex items-center">
+                <svg class="min-w-8" width="25" height="25">
+                    <image xlink:href="assets/img/icons/check.svg" width="25" height="25" />
+                </svg>
+                <div><span class="font-semibold">Visibilité Améliorée : </span> <span>Optimisation SEO pour un meilleur
+                        positionnement en ligne.</span></div>
+            </li>
+            <li class="flex items-center">
+                <svg class="min-w-8" width="25" height="25">
+                    <image xlink:href="assets/img/icons/check.svg" width="25" height="25" />
+                </svg>
+                <div><span class="font-semibold">Interaction Utilisateur Optimisée : </span> <span>Intégration de
+                        MeetForm pour des formulaires personnalisés et
+                        efficaces.</span></div>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <a href="#contact">
+            <button aria-label="Contact Button" id="btnContactArmoises"
+                class="animate__animated animate__pulse animate__slow animate__infinite bg-pink-600 rounded-lg px-6 py-3 text-white font-semibold hover:bg-white hover:text-pink-600 duration-700">
+                Contactez-moi
+            </button>
+        </a>
+    </div>
+    <button id="backToTopBtnArmoises">Retour en haut</button>
+</section>
+<!---->
+
+<!-- modal projet dogsense -->
+<section id="containerModalDogSense"
+    class="modal hidden fixed z-[999] inset-0 bg-amber-100 overflow-y-auto max-h-[90vh] mx-8 my-8 px-8 py-8 rounded-3xl flex-col gap-8 xl:gap-16 animate__animated animate__fadeOut">
+    <div class="relative flex">
+        <div class="pt-8 space-y-4">
+            <h2 class="font-oswald font-extralight leading-relaxed text-3xl 2xl:text-5xl">
+                DogSense - Comportementalisme Canin - Design UI/UX et Site Web
+            </h2>
+            <p class="xl:text-lg py-8 2xl:py-12">
+                DogSense est un projet destiné à promouvoir les services de comportementalisme canin en adoptant une
+                approche centrée sur le design thinking. Grâce à une compréhension approfondie des besoins des
+                utilisateurs, J'ai pu développé une plateforme intuitive et efficace. En utilisant une gestion agile,
+                le projet a progressé de manière fluide depuis les premiers wireframes jusqu'à un maquettage haute
+                fidélité, tout en respectant un cahier des charges rigoureusement établi pour répondre aux attentes des
+                clients.
+        </div>
+        <button id="btnCloseModalDogSense" class="absolute top-5 right-5 hover:cursor-pointer">
+            <span
+                class="block absolute h-0.5 w-5 bg-black transform transition duration-500 ease-in-out rotate-45"></span>
+            <span
+                class="block absolute h-0.5 w-5 bg-black transform transition duration-500 ease-in-out -rotate-45"></span>
+        </button>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-4 xl:gap-8">
+        <div class="bg-[#C3DC7A] px-4 py-3 rounded-3xl">
+            <span>FIGMA</span>
+        </div>
+        <div class="bg-[#C3DC7A] px-4 py-3 rounded-3xl">
+            <span>FIGJAM</span>
+        </div>
+        <div class="bg-[#C3DC7A] px-4 py-3 rounded-3xl">
+            <span>NOTION</span>
+        </div>
+        <div class="bg-[#C3DC7A] px-4 py-3 rounded-3xl">
+            <span>TRELLO</span>
+        </div>
+    </div>
+
+    <!-- cards carroussel -->
+    <!-- <div id="splideDogSense" class="splide" aria-labelledby="carousel-heading">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="px-8 py-4 flex flex-col items-center justify-center splide__slide drop-shadow-xl">
+                    <img src="assets/img/illustrations/jmsseul.png"
+                        alt="Illustration du site web dans une mockup mobile" />
+                    <p class="text-[#858585] py-4 xl:text-lg mx-auto text-center">Page d'accueil</p>
+                </li>
+                <li class="px-8 py-4 flex flex-col items-center justify-center splide__slide drop-shadow-xl">
+                    <img src="assets/img/illustrations/jmsseul0.png"
+                        alt="Illustration du site web dans une mockup mobile" />
+                    <p class="text-[#858585] py-4 xl:text-lg mx-auto text-center">Espace de connexion</p>
+                </li>
+                <li class="px-8 py-4 flex flex-col items-center justify-center splide__slide drop-shadow-xl">
+                    <img src="assets/img/illustrations/jmsseul1.png"
+                        alt="Illustration du site web dans une mockup mobile" />
+                    <p class="text-[#858585] py-4 xl:text-lg mx-auto text-center">Ajout d'un article (administration)
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div> -->
+
+    <div>
+        <ul class="space-y-4 xl:space-y-8">
+            <li class="flex items-center">
+                <svg class="min-w-8" width="25" height="25">
+                    <image xlink:href="assets/img/icons/check.svg" width="25" height="25" />
+                </svg>
+                <div><span class="font-semibold">Suivi du Design Thinking : </span> <span>Création d'une plateforme
+                        répondant parfaitement aux attentes des utilisateurs.</span></div>
+            </li>
+            <li class="flex items-center">
+                <svg class="min-w-8" width="25" height="25">
+                    <image xlink:href="assets/img/icons/check.svg" width="25" height="25" />
+                </svg>
+                <div><span class="font-semibold">Processus de Prototypage : </span> <span>Passage du wireframe basse
+                        fidélité au maquettage haute fidélité pour un prototypage efficace.</span></div>
+            </li>
+            <li class="flex items-center">
+                <svg class="min-w-8" width="25" height="25">
+                    <image xlink:href="assets/img/icons/check.svg" width="25" height="25" />
+                </svg>
+                <div><span class="font-semibold">Gestion Agile du Projet : </span> <span>Progression sans encombre grâce
+                        à une gestion agile du projet.</span></div>
+            </li>
+            <li class="flex items-center">
+                <svg class="min-w-8" width="25" height="25">
+                    <image xlink:href="assets/img/icons/check.svg" width="25" height="25" />
+                </svg>
+                <div><span class="font-semibold">Établissement du Cahier des Charges : </span> <span>Création d'une
+                        identité visuelle complète pour l'agence.</span></div>
+            </li>
+            <li class="flex items-center">
+                <svg class="min-w-8" width="25" height="25">
+                    <image xlink:href="assets/img/icons/check.svg" width="25" height="25" />
+                </svg>
+                <div><span class="font-semibold">Optimisation du Parcours Utilisateur : </span> <span>Garantie d'une
+                        expérience utilisateur rapide et réactive.</span></div>
+            </li>
+            <li class="flex items-center">
+                <svg class="min-w-8" width="25" height="25">
+                    <image xlink:href="assets/img/icons/check.svg" width="25" height="25" />
+                </svg>
+                <div><span class="font-semibold">Lien Figma : </span> <span><a target="_blank" href="https://www.figma.com/design/bPgNTCl9F7o1RA2mW1Hu6p/Comportementaliste-canin---DogSense?node-id=0-1&t=RxUJ5gMXAuftchX2-1">Cliquez ici</a></span></div>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <a href="#contact">
+            <button aria-label="Contact Button" id="btnContactDogSense"
+                class="animate__animated animate__pulse animate__slow animate__infinite bg-pink-600 rounded-lg px-6 py-3 text-white font-semibold hover:bg-white hover:text-pink-600 duration-700">
+                Contactez-moi
+            </button>
+        </a>
+    </div>
+    <button id="backToTopBtnDogSense">Retour en haut</button>
+</section>
+<!---->  
+<!-- modal mentions légales -->
+<section
+  id="containerModalLegalMentions"
+  class="modal hidden fixed z-[999] inset-0 bg-amber-100 border-custom max-h-fit mx-8 my-8 px-8 py-8 rounded-3xl flex-col gap-8 xl:gap-16 animate__animated animate__fadeOut shadow-xl"
+>
+  <div class="relative flex">
+    <div class="pt-8 space-y-4">
+      <h2
+        class="font-oswald font-extralight leading-relaxed text-3xl 2xl:text-5xl"
+      >
+        Mentions Légales
+      </h2>
+    </div>
+    <button
+      id="btnCloseModalLegalMentions"
+      class="absolute top-5 right-5 hover:cursor-pointer"
+    >
+      <span
+        class="block absolute h-0.5 w-5 bg-black transform transition duration-500 ease-in-out rotate-45"
+      ></span>
+      <span
+        class="block absolute h-0.5 w-5 bg-black transform transition duration-500 ease-in-out -rotate-45"
+      ></span>
+    </button>
+  </div>
+  <div class="space-y-4 overflow-y-auto max-h-[calc(100vh-8rem)]">
+    <div class="space-y-2">
+      <h3
+        class="font-oswald font-extralight leading-relaxed text-xl lg:text-2xl"
+      >
+        Identification du site :
+      </h3>
+      <p class="xl:text-lg">
+        Ce site est édité par RENOLLET Nataël, en qualité de développeur web et
+        designer UI/UX.
+      </p>
+    </div>
+    <div class="space-y-2">
+      <h3
+        class="font-oswald font-extralight leading-relaxed text-xl lg:text-2xl"
+      >
+        Coordonnées :
+      </h3>
+      <p class="xl:text-lg">
+        7 BIS RUE EMILE ZOLA, BOGNY-SUR-MEUSE, 08120<br />
+        <br />
+        renolletnataelweb@gmail.com
+      </p>
+    </div>
+    <div class="space-y-2">
+      <h3
+        class="font-oswald font-extralight leading-relaxed text-xl lg:text-2xl"
+      >
+        Hébergeur :
+      </h3>
+      <p class="xl:text-lg">
+        Ce site est hébergé par o2switch, dont le siège social est situé à Chem.
+        des Pardiaux, 63000 Clermont-Ferrand.
+      </p>
+    </div>
+    <div class="space-y-2">
+      <h3
+        class="font-oswald font-extralight leading-relaxed text-xl lg:text-2xl"
+      >
+        Propriété intellectuelle :
+      </h3>
+      <p class="xl:text-lg">
+        Tous les contenus présents sur ce site (textes, images, vidéos, etc.)
+        sont la propriété intellectuelle de RENOLLET Nataël, ainsi que @storyset
+        sur Freepik.com.
+      </p>
+    </div>
+    <div class="space-y-2">
+      <h3
+        class="font-oswald font-extralight leading-relaxed text-xl lg:text-2xl"
+      >
+        Droits d'auteur :
+      </h3>
+      <p class="xl:text-lg">
+        Tous droits réservés. La reproduction, la distribution ou la
+        modification du contenu de ce site est interdite sans autorisation
+        préalable.
+      </p>
+    </div>
+  </div>
+</section>
+<!---->
+<!-- modal données personnelles -->
+<section
+  id="containerModalDataUser"
+  class="modal hidden fixed z-[999] inset-0 bg-amber-100 border-custom max-h-fit mx-8 my-8 px-8 py-8 rounded-3xl flex-col gap-8 xl:gap-16 animate__animated animate__fadeOut shadow-xl"
+>
+  <div class="relative flex">
+    <div class="pt-8 space-y-4">
+      <h2
+        class="font-oswald font-extralight leading-relaxed text-3xl 2xl:text-5xl"
+      >
+        Données Personnelles
+      </h2>
+    </div>
+    <button
+      id="btnCloseModalDataUser"
+      class="absolute top-5 right-5 hover:cursor-pointer"
+    >
+      <span
+        class="block absolute h-0.5 w-5 bg-black transform transition duration-500 ease-in-out rotate-45"
+      ></span>
+      <span
+        class="block absolute h-0.5 w-5 bg-black transform transition duration-500 ease-in-out -rotate-45"
+      ></span>
+    </button>
+  </div>
+  <div class="space-y-4 overflow-y-auto max-h-[calc(100vh-8rem)]">
+    <div class="space-y-2">
+      <h3
+        class="font-oswald font-extralight leading-relaxed text-xl lg:text-2xl"
+      >
+        Collecte des données :
+      </h3>
+      <p class="xl:text-lg">
+        Lorsque vous utilisez le formulaire de contact sur ce site, nous
+        collectons les informations suivantes : adresse e-mail, objet du
+        message, et message lui-même. Ces données sont collectées dans le but de
+        pouvoir répondre à vos demandes.
+      </p>
+    </div>
+    <div class="space-y-2">
+      <h3
+        class="font-oswald font-extralight leading-relaxed text-xl lg:text-2xl"
+      >
+        Utilisation des données :
+      </h3>
+      <p class="xl:text-lg">
+        Les données collectées ne sont utilisées que dans le cadre de la
+        communication entre vous et RENOLLET Nataël. Elles ne sont en aucun cas
+        utilisées à des fins commerciales ou transmises à des tiers sans votre
+        consentement explicite.
+      </p>
+    </div>
+    <div class="space-y-2">
+      <h3
+        class="font-oswald font-extralight leading-relaxed text-xl lg:text-2xl"
+      >
+        Durée de conservation :
+      </h3>
+      <p class="xl:text-lg">
+        Les données collectées via le formulaire de contact sont stockées
+        temporairement jusqu'à la validation de réception du message. Une fois
+        le message reçu et traité, ces données sont immédiatement supprimées de
+        nos systèmes.
+      </p>
+    </div>
+  </div>
+</section>
+<!---->
+<!-- modal politique confidentialité -->
+<section
+  id="containerModalPolicy"
+  class="modal hidden fixed z-[999] inset-0 bg-amber-100 border-custom max-h-fit mx-8 my-8 px-8 py-8 rounded-3xl flex-col gap-8 xl:gap-16 animate__animated animate__fadeOut shadow-xl"
+>
+  <div class="relative flex">
+    <div class="pt-8 space-y-4">
+      <h2
+        class="font-oswald font-extralight leading-relaxed text-3xl 2xl:text-5xl"
+      >
+        Politique de confidentialité
+      </h2>
+    </div>
+    <button
+      id="btnCloseModalPolicy"
+      class="absolute top-5 right-5 hover:cursor-pointer"
+    >
+      <span
+        class="block absolute h-0.5 w-5 bg-black transform transition duration-500 ease-in-out rotate-45"
+      ></span>
+      <span
+        class="block absolute h-0.5 w-5 bg-black transform transition duration-500 ease-in-out -rotate-45"
+      ></span>
+    </button>
+  </div>
+  <div class="space-y-4 overflow-y-auto max-h-[calc(100vh-8rem)]">
+    <div class="space-y-2">
+      <h3
+        class="font-oswald font-extralight leading-relaxed text-xl lg:text-2xl"
+      >
+        Sécurité des données :
+      </h3>
+      <p class="xl:text-lg">
+        Je prends la sécurité de vos données personnelles très au sérieux. Des
+        mesures de sécurité appropriées sont mises en place pour protéger vos
+        informations contre tout accès non autorisé, toute divulgation ou toute
+        altération.
+      </p>
+    </div>
+    <div class="space-y-2">
+      <h3
+        class="font-oswald font-extralight leading-relaxed text-xl lg:text-2xl"
+      >
+        Cookies :
+      </h3>
+      <p class="xl:text-lg">
+        Ce site n'utilise pas de cookies de suivi ou de publicité. Nous
+        utilisons uniquement des cookies techniques nécessaires au bon
+        fonctionnement du site.
+      </p>
+    </div>
+    <div class="space-y-2">
+      <h3
+        class="font-oswald font-extralight leading-relaxed text-xl lg:text-2xl"
+      >
+        Liens externes :
+      </h3>
+      <p class="xl:text-lg">
+        Ce site peut contenir des liens vers des sites externes. Nous ne sommes
+        pas responsables des pratiques de confidentialité ou du contenu de ces
+        sites. Nous vous encourageons à lire les politiques de confidentialité
+        de ces sites externes.
+      </p>
+    </div>
+  </div>
+</section>
+<!---->
+  <!-- scripts parts -->
+  <script src="assets/scripts/toogle-btn-navbar.js"></script>
+  <script src="assets/scripts/animations.js"></script>
+  <script src="assets/scripts/toogle-modal.js"></script>
+  <script defer src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+  <script defer
+    src="node_modules/@splidejs/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <script defer type="module" src="assets/scripts/carroussel-splide.js"></script>
+  <script defer src="assets/scripts/form-contact.js"></script>
+  <script defer src="https://www.google.com/recaptcha/api.js"></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("form-contact").submit();
+    }
+  </script>
+</body>
+
+</html>
